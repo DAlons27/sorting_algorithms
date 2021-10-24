@@ -1,6 +1,6 @@
 #ifndef SORT_H
 #define SORT_H
-
+/*Includes*/
 #include <stdlib.h>
 #include <stdio.h>
 #include <time.h>
@@ -18,6 +18,8 @@ typedef struct listint_s
     struct listint_s *prev;
     struct listint_s *next;
 } listint_t;
+
+/*Prototypes*/
 
 void print_array(const int *array, size_t size);
 void print_list(const listint_t *list);
