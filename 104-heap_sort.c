@@ -23,14 +23,14 @@ void swap(int *array, size_t size, int *a, int *b)
 }
 
 /**
-*siftdown - siftdown implementation
-*
-*@array: array to be sorted
-*@start: start of array
-*@end: end of array
-*@size: size of array
-*
-*/
+ * siftdown - siftdown implementation
+ *
+ * @array: array to be sorted
+ * @start: start of array
+ * @end: end of array
+ * @size: size of array
+ *
+ */
 void siftdown(int *array, size_t start, size_t end, size_t size)
 {
     size_t root = start, _swap, child;
@@ -52,12 +52,12 @@ void siftdown(int *array, size_t start, size_t end, size_t size)
 }
 
 /**
-*heapify - makes heap in-place
-*
-*@array: array to be sorted
-*@size: size of array
-*
-*/
+ * heapify - makes heap in-place
+ *
+ * @array: array to be sorted
+ * @size: size of array
+ *
+ */
 void heapify(int *array, size_t size)
 {
     ssize_t start;
@@ -70,12 +70,12 @@ void heapify(int *array, size_t size)
     }
 }
 /**
-*heap_sort - heap sort algorithm
-*
-*@array: array to sort
-*@size: size of array
-*
-*/
+ * heap_sort - heap sort algorithm
+ *
+ * @array: array to sort
+ * @size: size of array
+ *
+ */
 void heap_sort(int *array, size_t size)
 {
     size_t end;

@@ -1,11 +1,11 @@
 #include "sort.h"
 /**
-*swap - swaps 2 nodes in a doubly-linked list
-*@a: address of first node
-*@b: address of second node
-*
-*Return: void
-*/
+ * swap - swaps 2 nodes in a doubly-linked list
+ * @a: address of first node
+ * @b: address of second node
+ *
+ * Return: void
+ */
 void swap(listint_t *a, listint_t *b)
 {
     if (a->prev)
@@ -18,14 +18,13 @@ void swap(listint_t *a, listint_t *b)
     b->next = a;
 }
 /**
-*tail_traverse- function that sorts from the tail back
-*
-*@head: head of list
-*@tail: tail of the list
-*@list: original head of the list
-*
-*Return: new head of the list
-*/
+ * tail_traverse- function that sorts from the tail back
+ * @head: head of list
+ * @tail: tail of the list
+ * @list: original head of the list
+ *
+ * Return: new head of the list
+ */
 listint_t *tail_traverse(listint_t *head, listint_t *tail, listint_t *list)
 {
     while (tail && tail->prev)
@@ -46,10 +45,10 @@ listint_t *tail_traverse(listint_t *head, listint_t *tail, listint_t *list)
 }
 
 /**
-*cocktail_sort_list - sorts linked list using cocktail shaker sort
-*
-*@list: doubly linked list to be sorted
-*/
+ * cocktail_sort_list - sorts linked list using cocktail shaker sort
+ *
+ * @list: doubly linked list to be sorted
+ */
 void cocktail_sort_list(listint_t **list)
 {
     listint_t *tail, *head, *len;

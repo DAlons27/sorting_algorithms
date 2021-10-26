@@ -7,7 +7,7 @@
  * @stop: the stop index
  * @new: the output array
  *
- * Return: void.
+ * Return: Nothing
  */
 void merge_compare(int *array, size_t start, size_t stop, int *new)
 {
@@ -40,7 +40,7 @@ void merge_compare(int *array, size_t start, size_t stop, int *new)
  * @stop: the stop index
  * @new: the output array
  *
- * Return: void.
+ * Return: Nothing
  */
 void merge_sort_top_down(int *array, size_t start, size_t stop, int *new)
 {
@@ -61,7 +61,7 @@ void merge_sort_top_down(int *array, size_t start, size_t stop, int *new)
  * @array: the integer array to sort
  * @size: the size of the array
  *
- * Return: void.
+ * Return: Nothing
  */
 void merge_sort(int *array, size_t size)
 {

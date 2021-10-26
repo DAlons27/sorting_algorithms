@@ -5,7 +5,7 @@
  * @a: address of first node
  * @b: address of second node
  *
- * Return: void
+ * Return: Nothing
  */
 void swap(listint_t *a, listint_t *b)
 {
