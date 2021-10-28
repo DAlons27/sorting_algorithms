@@ -10,10 +10,8 @@ void bubble_sort(int *array, size_t size)
 {
 int temp;
 size_t i, k;
-
 if (!array || !size)
 return;
-
 i = 0;
 while (i < size)
 {
