@@ -15,7 +15,6 @@ size_t get_max_gap(size_t size)
 		n = n * 3 + 1;
 	return ((n - 1) / 3);
 }
-
 /**
  * shell_sort - shell_sort
  * @array: the integer array to sort
@@ -42,6 +41,7 @@ void shell_sort(int *array, size_t size)
 				array[j] = array[j - gap];
 			}
 			array[j] = temp;
+
 		}
 		print_array(array, size);
 	}
