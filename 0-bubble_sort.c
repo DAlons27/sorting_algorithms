@@ -1,3 +1,8 @@
+/*
+ * File: 0-bubble_sort.c
+ * Auth: Diego Morey
+ */
+
 #include "sort.h"
 /**
 * bubble_sort - Function that sorts an array of ints
