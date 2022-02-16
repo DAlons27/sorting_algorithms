@@ -1,35 +1,28 @@
-/*
- * File: 0-bubble_sort.c
- * Auth: Diego Morey
- */
-
 #include "sort.h"
+
 /**
-* bubble_sort - Function that sorts an array of ints
-* @array: array int
-* @size: size array
-*
-* Return: Nothing
-*/
-void bubble_sort(int *array, size_t size)
+ * bubble_sort - Function tha sorts an array of integers in
+ * ascending order usin the Bubble sort algorithm.
+ * @arr: Array to apply sortin algorithm.
+ * @size: size of element in array.
+ */
+void bubble_sort(int *arr, size_t size)
 {
-int temp;
-size_t i, k;
-if (!array || !size)
-return;
-i = 0;
-while (i < size)
-{
-for (k = 0; k < size - 1; k++)
-{
-if (array[k] > array[k + 1])
-{
-temp = array[k];
-array[k] = array[k + 1];
-array[k + 1] = temp;
-print_array(array, size);
-}
-}
-i++;
-}
+	int Ncycle; /*cycles traversed*/
+	int cpsize = size - 1; /*Decremental value per cycle*/
+	int ssize = size; /*Original value of size*/
+
+	for (; cpsize >= 0 ; cpsize--)
+	{
+		for (Ncycle = 0; Ncycle <= cpsize; Ncycle++)
+		{
+			if (arr[Ncycle] > arr[Ncycle + 1] && (Ncycle + 1) < ssize)
+			{
+				arr[Ncycle] = arr[Ncycle] ^ arr[Ncycle + 1];
+				arr[Ncycle + 1] = arr[Ncycle] ^ arr[Ncycle + 1];
+				arr[Ncycle] = arr[Ncycle] ^ arr[Ncycle + 1];
+				print_array(arr, size);
+			}
+		}
+	}
 }
